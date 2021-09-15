@@ -5,22 +5,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/98db508811.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="background-n">
+
         <div class="background-opacity">
-            <nav>
-                <form action="#" method="POST">
-                    <input type="text" name="city" placeholder="Введите название города">
-                </form>
-                <div class="city-contry">
-                </div>
-            </nav>
+            <div class="container">
+                <nav>
+                    <form action="#" method="POST">
+                        <input type="text" name="city" placeholder="Введите название города">
+                        <button> click</button>
+                    </form>
+                    <div class="city-contry">
+                        <p> BELARUS,</p>
+                        <p>MINSK</p>
+                    </div>
+
+                </nav>
+                <main>
+                    <div class="today_weather">
+                        <div class="today">
+                            <p class="today_data-name">Today</p>
+                            <p class="today_data">15/09/2021</p>
+                            <p class="today_day-of-week">Wednesday</p>
+                        </div>
+                        <div class="today_weather-weather">
+                            <i class="fas fa-sun today_i"></i>
+                            <p class="today_weather-day">°C</p>
+                            <i class="fas fa-cloud-moon today_i"></i>
+                            <p class="today_weather-night">°C</p>
+                            <p class="today_weather-pressure">Pressure:</p>
+                            <p class="today_weather-wind">Wind:</p>
+                            <p class="today_weather-humidity">Humidity:</p>
+                        </div>
+                    </div>
+
+                    <div class="other-weather">
+                        <div class="tomorrow_weather">
+                            <div class="tomorrow">
+                                <p class="tomorrow_data">16/09/2021</p>
+                                <p class="tomorrow_day-of-week">Thursday</p>
+                            </div>
+                            <div class="tomorrow_weather-weather">
+                                <i class="fas fa-sun tomorrow_i"></i>
+                                <p class="tomorrow_weather-day">°C</p>
+                                <i class="fas fa-cloud-moon tomorrow_i"></i>
+                                <p class="tomorrow_weather-night">°C</p>
+                                <p class="tomorrow_weather-pressure">Pressure:</p>
+                                <p class="tomorrow_weather-wind">Wind:</p>
+                                <p class="tomorrow_weather-humidity">Humidity:</p>
+                            </div>
+
+
+                        </div>
+                        <div class="tomorrow-next_weather">
+                            <div class="tomorrow-next">
+                                <p class="tomorrow-next_data">17/09/2021</p>
+                                <p class="tomorrow-next_day-of-week">Friday</p>
+                            </div>
+                            <div class="tomorrow-next_weather-weather">
+                                <i class="fas fa-sun tomorrow-next_i"></i>
+                                <p class="tomorrow-next_weather-day">°C</p>
+                                <i class="fas fa-cloud-moon tomorrow-next_i"></i>
+                                <p class="tomorrow-next_weather-night">°C</p>
+                                <p class="tomorrow-next_weather-pressure">Pressure:</p>
+                                <p class="tomorrow-next_weather-wind">Wind:</p>
+                                <p class="tomorrow-next_weather-humidity">Humidity:</p>
+                            </div>
+
+
+                        </div>
+                        <div class="last_weather">
+                            <div class="last">
+                                <p class="last_data">18/09/2021</p>
+                                <p class="last_day-of-week">Saturday</p>
+                            </div>
+                            <div class="last_weather-weather">
+                                <i class="fas fa-sun last_i"></i>
+                                <p class="last_weather-day">°C</p>
+                                <i class="fas fa-cloud-moon last_i"></i>
+                                <p class="last_weather-night">°C</p>
+                                <p class="last_weather-pressure">Pressure:</p>
+                                <p class="last_weather-wind">Wind:</p>
+                                <p class="last_weather-humidity">Humidity:</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="otherdays"></div>
+                </main>
+
+
+            </div>
+
         </div>
+
+
+
+
+
+
     </div>
+
+
+
+
+
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
