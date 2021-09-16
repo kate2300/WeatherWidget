@@ -139,24 +139,15 @@ main {
     width: 70%;
 }
 
-.tomorrow_weather,
-.tomorrow-next_weather,
-.last_weather {
+.tomorrow_weather {
     width: 33%;
-}
-
-.tomorrow_weather,
-.tomorrow-next_weather,
-.last_weather {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 350px;
 }
 
-.tomorrow_i,
-.tomorrow-next_i,
-.last_i {
+.tomorrow_i {
     font-size: 40px;
     font-weight: 700;
     margin: 20px 0;
@@ -164,29 +155,15 @@ main {
 
 .tomorrow_data,
 .tomorrow_day-of-week,
-.tomorrow-next_data,
-.tomorrow-next_day-of-week,
-.last_data,
-.last_day-of-week,
 .tomorrow_weather-day,
-.tomorrow_weather-night,
-.tomorrow-next_weather-day,
-.tomorrow-next_weather-night,
-.last_weather-day,
-.last_weather-night {
+.tomorrow_weather-night {
     font-size: 20px;
     margin-bottom: 10px;
 }
 
 .tomorrow_weather-pressure,
 .tomorrow_weather-wind,
-.tomorrow_weather-humidity,
-.tomorrow-next_weather-pressure,
-.tomorrow-next_weather-wind,
-.tomorrow-next_weather-humidity,
-.last_weather-pressure,
-.last_weather-wind,
-.last_weather-humidity {
+.tomorrow_weather-humidity {
     font-size: 16px;
     margin-bottom: 10px;
 }
