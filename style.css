@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    color: white;
+    font-weight: 700px;
+}
+
+.background-opacity {
+    background: rgba(0, 0, 0, 0.75);
+    max-width: 800px;
+    min-height: 800px;
+    margin: 100px auto;
+}
+
+.container {
+    padding: 50px;
+}
+
+nav {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    padding: 10px;
+    margin-right: 5px;
+    border: black 1px solid;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0);
+    width: 190px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+}
+
+button {
+    padding: 5px;
+    border: rgb(68, 74, 80) 1px solid;
+    border-radius: 15%;
+    box-shadow: slategray;
+    width: 50px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #7253e3, #07aca6);
+    color: rgb(0, 14, 58);
+}
+
+.city-contry {
+    display: flex;
+    flex-direction: column;
+    min-height: 80px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.city-contry :first-child {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.city-contry :last-child {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.today_weather {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.today_data-name,
+.today_data {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.today_day-of-week {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.fa-sun {
+    color: rgb(254, 255, 206);
+}
+
+.fa-cloud-moon {
+    color: rgb(0, 14, 58);
+    border-radius: 50%;
+    background-color: #42ccd1;
+    background-image: linear-gradient(90deg, #7253e3, #07aca6);
+}
+
+.today_i {
+    font-size: 80px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.today_weather-day,
+.today_weather-night {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.today_weather-pressure,
+.today_weather-wind,
+.today_weather-humidity {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.other-weather {
+    min-height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.tomorrow_weather {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 350px;
+}
+
+.tomorrow_i {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.tomorrow_data,
+.tomorrow_day-of-week,
+.tomorrow_weather-day,
+.tomorrow_weather-night {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tomorrow_weather-pressure,
+.tomorrow_weather-wind,
+.tomorrow_weather-humidity {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
