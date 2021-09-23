@@ -62,8 +62,8 @@ function addTodayWeather(weatherData) {
 
 }
 
-function giveNockData(value) {
-    return {
+function getWeatherData(imputValue) {
+    const mocked_API = {
         location: 'Moscow, RUSSIA',
         date: '11.09.2001',
         day: 'monday',
@@ -73,17 +73,29 @@ function giveNockData(value) {
         pressure: 748,
         wind: 2,
     }
+    return mocked_API
 }
 
 function handleInput(imputValue) {
+    console.log(imputValue) // это тут по приколу. Просто что бы видеть что ты выводишь что-то
 
+    //достаём данные с апихи
+    const weatherData = getWeatherData(imputValue);
+
+    //тут форматнуть данные, когда надо будет
+    // либо можно это сделать ещё в getWeatherData
+
+    //обновляем наш DOM, уже с нвыоми данными
+    addLocationName(weatherData.location);
+    addTodayWeather(weatherData);
 }
 
 function main() {
+    let elem = document.querySelector('button');
+    let input = document.querySelector('input');
+    elem.addEventListener('click', () => { console.log(input.value) })
 
-    const weatherData = giveNockData(456456);
-    addLocationName(weatherData.location);
-    addTodayWeather(weatherData);
+
 
 }
 
