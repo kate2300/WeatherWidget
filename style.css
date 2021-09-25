@@ -5,8 +5,17 @@
 }
 
 body {
-    background: wheat;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.background-n {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: wheat;
 }
 
 p {
@@ -15,24 +24,39 @@ p {
 }
 
 .background-opacity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7%;
     background: rgba(0, 0, 0, 0.75);
-    max-width: 800px;
-    min-height: 800px;
-    margin: 100px auto;
+    width: 90%;
+    max-height: 95%;
+    max-width: 1200px;
+    /* margin: 100px auto; */
     box-shadow: 0.5rem 0.5rem 1rem black;
 }
 
-.container {
-    padding: 50px;
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav {
-    padding-bottom: 30px;
+main {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-input {
+.div-div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+textarea {
     padding: 10px;
     margin-right: 5px;
     border: black 1px solid;
@@ -44,14 +68,14 @@ input {
     font-weight: 500;
     color: white;
     background-color: black;
+    resize: none
 }
 
 button {
-    padding: 5px;
     border: rgb(68, 74, 80) 1px solid;
     border-radius: 15%;
     box-shadow: slategray;
-    width: 50px;
+    width: 40px;
     height: 40px;
     font-size: 12px;
     font-weight: 700;
@@ -62,9 +86,10 @@ button {
 .city-contry {
     display: flex;
     flex-direction: column;
-    min-height: 80px;
+    /* min-height: 80px; */
     justify-content: space-between;
     align-items: flex-start;
+    margin: 1rem 0;
 }
 
 .city-contry :first-child {
@@ -89,18 +114,18 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
+    flex: 2;
 }
 
 .today_data-name,
 .today_data {
     font-size: 26px;
-    margin-bottom: 10px;
+    margin: 1rem 0;
 }
 
 .today_day-of-week {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin: 1rem 0;
 }
 
 .fa-sun {
@@ -123,26 +148,27 @@ main {
 .today_weather-day,
 .today_weather-night {
     font-size: 26px;
-    margin-bottom: 10px;
+    margin: 1rem 0;
 }
 
 .today_weather-pressure,
 .today_weather-wind,
 .today_weather-humidity {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin: 1rem 0;
 }
 
 .other-weather {
-    min-height: 300px;
+    /* min-height: 300px; */
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
-    width: 70%;
+    flex: 3;
 }
 
 .tomorrow_weather {
-    width: 33%;
+    margin: 0 3rem 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -152,7 +178,7 @@ main {
 .tomorrow_i {
     font-size: 40px;
     font-weight: 700;
-    margin: 20px 0;
+    margin: 1rem 0;
 }
 
 .tomorrow_data,
@@ -160,12 +186,12 @@ main {
 .tomorrow_weather-day,
 .tomorrow_weather-night {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin: 1rem 0;
 }
 
 .tomorrow_weather-pressure,
 .tomorrow_weather-wind,
 .tomorrow_weather-humidity {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin: 1rem 0;
 }

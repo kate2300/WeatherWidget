@@ -92,8 +92,8 @@ function handleInput(imputValue) {
 
 function main() {
     let elem = document.querySelector('button');
-    let input = document.querySelector('input');
-    elem.addEventListener('click', () => { console.log(input.value) })
+    let textarea = document.querySelector('textarea');
+    elem.addEventListener('click', () => handleInput(textarea.value))
 
 
 
